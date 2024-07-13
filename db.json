@@ -1,0 +1,19 @@
+
+   [
+    
+        {"id": "1", "title": "Video 1", "url": "https://www.youtube.com/watch?v=FJWC167fYA4", "category": "frontend", "colors": "#6BD1FF", "image":"/images/imageteam1.png"},
+        {"id": "2", "title": "Video 2", "url": "https://www.youtube.com/watch?v=NPy3VxK2FS4", "category": "frontend", "colors": "#6BD1FF","image":"/images/imageteam1.png"},
+        {"id": "3", "title": "Video 3", "url": "https://www.youtube.com/watch?v=FJWC167fYA4", "category": "frontend", "colors": "#6BD1FF","image":"/images/imageteam1.png"},
+     
+     
+        {"id": "4", "title": "Video 1", "url": "https://www.youtube.com/watch?v=FJWC167fYA4", "category": "backend", "colors": "#00C86F", "image":"/images/imageteam1.png"},
+        {"id": "5", "title": "Video 2", "url": "https://www.youtube.com/watch?v=NPy3VxK2FS4", "category": "backend", "colors": "#00C86F", "image":"/images/imageteam1.png"},
+        {"id": "6", "title": "Video 3", "url": "https://www.youtube.com/watch?v=FJWC167fYA4", "category": "backend", "colors": "#00C86F", "image":"/images/imageteam1.png"},
+     
+      
+        {"id": "7", "title": "Video 1", "url": "https://www.youtube.com/watch?v=FJWC167fYA4", "category": "mobile", "colors": "#FFBA05", "image":"/images/imageteam1.png"},
+        {"id": "8", "title": "Video 2", "url": "https://www.youtube.com/watch?v=NPy3VxK2FS4", "category": "mobile", "colors": "#FFBA05", "image":"/images/imageteam1.png"},
+        {"id": "9", "title": "Video 3", "url": "https://www.youtube.com/watch?v=FJWC167fYA4", "category": "mobile", "colors":
+        "#FFBA05", "image":"/images/imageteam1.png"}
+      
+        ]

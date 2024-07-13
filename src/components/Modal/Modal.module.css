@@ -1,0 +1,174 @@
+.containerDialog {
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  position: fixed; 
+  top: 0; 
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centraliza verticalmente */
+  z-index: 10;
+}
+
+.dialog {
+  margin-top: 100px;
+  width: 50%;
+  height: 80%; 
+  border-radius: 15px;
+  border: 5px solid var(--color-team-blue-light);
+  background-color: #03122F;
+  color: #fff;
+  z-index: 20;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-y: auto; 
+}
+
+.dialog::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+
+.formContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 80%;
+}
+
+.imgClose {
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.containerInputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input {
+  width: 470px;
+  height: 50px;
+  border: 3px solid #2271D1;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #fff;
+}
+.input::placeholder{
+  color: #ffffffce;
+}
+
+.inputDesc {
+  width: 470px;
+  height: 50px;
+  border: 3px solid #2271D1;
+  border-radius: 10px;
+  background-color: transparent;
+  margin-bottom: 30px;
+  color: #fff;
+}
+.inputDesc::placeholder{
+  color: #ffffffce;
+}
+.buttons button {
+  background-color: transparent;
+  color: #fff;
+  border: 3px solid #fff;
+  width: 180.13px;
+  height: 54px;
+  margin-bottom: 50px;
+}
+
+.buttons {
+  display: flex;
+  gap: 100px;
+}
+
+
+.no-scroll {
+  overflow: hidden;
+}
+
+
+
+/* .containerDialog{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed; 
+    top: 0; 
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.dialog{
+  width: 50%;
+  height: 1000px;
+  border-radius: 15px ;
+  border: 5px solid var(--color-team-blue-light);
+  background-color: #03122F  ;
+  color:#fff;
+  top: 1; 
+  right: 1;
+  bottom: 1;
+  left: 1;
+  z-index: 10px;
+  position: absolute;
+}
+.formContainer{
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+}
+.imgClose{
+  align-self: end;
+
+}
+h1{
+  font-size: 60px;
+}
+.containerInputs{
+  display:flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+
+.input{
+  width: 470px;
+  height: 50px;
+  border: 3px solid #2271D1;
+  border-radius: 10px;
+  background-color: transparent;
+  color:#fff;
+}
+
+.inputDesc{
+  width: 470px;
+  height: 50px;
+  border: 3px solid #2271D1;
+  border-radius: 10px;
+  background-color: transparent;
+  margin-bottom: 30px;
+  color:#fff;
+}
+.buttons button{
+  background-color:transparent;
+  color: #fff;
+  border: 3px solid #fff;
+  width: 180.13px;
+  height: 54px;
+}
+.buttons{
+  display: flex;
+  gap: 100px;
+} */

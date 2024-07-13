@@ -1,0 +1,47 @@
+.category{
+    margin: 42px
+}
+.category_title{
+    width: 432px;
+    height: 70px;
+    text-align: center;
+    font-size: 48px;
+    padding: 10px;
+    border-radius: 15px;
+    color:var(--color-defaultWords);
+    text-transform: uppercase;
+
+}
+
+
+.categoryContainer .category_title_backend{
+    background-color: var(--color-team-green);
+}
+
+
+.categoryContainer .category_title_frontend{
+    background-color: var(--color-team-blue-light);
+    }
+.categoryContainer .category_title_mobile{
+     background-color: var(--color-team-yellow);
+    }
+.category_Card{
+    display:flex;
+    gap:10px;
+    overflow: auto;
+
+}
+.category_Card::-webkit-scrollbar-track {
+    border-radius: .7rem;
+    background-color: #2271D12B;
+  }
+
+  .category_Card::-webkit-scrollbar {
+    height: .7rem;
+    background: transparent;
+  }
+
+  .category_Card::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.466), #1458ac);
+    border-radius: .7rem;
+  }

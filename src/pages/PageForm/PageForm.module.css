@@ -1,0 +1,39 @@
+.formContainer{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    color:white;
+
+}
+
+.containerInputs{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.input{
+    width: 470px;
+    height: 62px;
+    border: 3px solid #262626;
+    border-radius: 10px;
+    background-color: transparent;
+    color:white
+
+}
+
+.inputDesc{
+    width: 470px;
+    height: 100px;
+    border: 3px solid #262626;
+    border-radius: 10px;
+    background-color: transparent;
+    color:white
+}
+
+.buttons{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}

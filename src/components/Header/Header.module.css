@@ -1,0 +1,18 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    box-shadow: 0px 5px 29px 0px #2271D1B2;
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+.image{
+width: 168.45px;
+height: 40px;
+}
+.divButton{
+    display:flex;
+    gap: 10px;
+}
