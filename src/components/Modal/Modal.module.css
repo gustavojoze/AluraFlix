@@ -69,6 +69,10 @@ h1 {
   color: #ffffffce;
 }
 
+.buttons select{
+  color: white;
+}
+
 .inputDesc {
   width: 470px;
   height: 50px;
@@ -81,6 +85,12 @@ h1 {
 .inputDesc::placeholder{
   color: #ffffffce;
 }
+
+
+.buttons {
+  display: flex;
+  gap: 100px;
+}
 .buttons button {
   background-color: transparent;
   color: #fff;
@@ -89,10 +99,13 @@ h1 {
   height: 54px;
   margin-bottom: 50px;
 }
-
-.buttons {
-  display: flex;
-  gap: 100px;
+.buttons button:active{
+  color: #2271D1;
+  background-color: transparent;
+  border: 3px solid #2271D1;
+}
+.buttons button:hover{
+ cursor: pointer;
 }
 
 
@@ -100,75 +113,3 @@ h1 {
   overflow: hidden;
 }
 
-
-
-/* .containerDialog{
-    background-color: rgba(0, 0, 0, 0.7);
-    position: fixed; 
-    top: 0; 
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-.dialog{
-  width: 50%;
-  height: 1000px;
-  border-radius: 15px ;
-  border: 5px solid var(--color-team-blue-light);
-  background-color: #03122F  ;
-  color:#fff;
-  top: 1; 
-  right: 1;
-  bottom: 1;
-  left: 1;
-  z-index: 10px;
-  position: absolute;
-}
-.formContainer{
-  display:flex;
-  align-items: center;
-  flex-direction: column;
-}
-.imgClose{
-  align-self: end;
-
-}
-h1{
-  font-size: 60px;
-}
-.containerInputs{
-  display:flex;
-  flex-direction: column;
-  gap: 20px;
-
-}
-
-.input{
-  width: 470px;
-  height: 50px;
-  border: 3px solid #2271D1;
-  border-radius: 10px;
-  background-color: transparent;
-  color:#fff;
-}
-
-.inputDesc{
-  width: 470px;
-  height: 50px;
-  border: 3px solid #2271D1;
-  border-radius: 10px;
-  background-color: transparent;
-  margin-bottom: 30px;
-  color:#fff;
-}
-.buttons button{
-  background-color:transparent;
-  color: #fff;
-  border: 3px solid #fff;
-  width: 180.13px;
-  height: 54px;
-}
-.buttons{
-  display: flex;
-  gap: 100px;
-} */

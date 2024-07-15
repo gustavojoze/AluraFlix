@@ -4,4 +4,11 @@
     justify-content: center;
     align-items: center;
     color: #ffff;
+    text-align: center;
+}
+
+.pageVideo_container p{
+    font-size: 1.5rem;
+    text-align: justify;
+    padding:18px 30px
 }

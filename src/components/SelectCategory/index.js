@@ -1,15 +1,23 @@
-import styles from "./SelectCategory.module.css"
+import styles from "./SelectCategory.module.css";
 
-function SelectCategory(){
-    return(
-        <div className='listTeamsContainer'>
-            <p>Selecione seu time</p>
-            <select name="cars" id="cars" className={styles.selectTeams}>
-            <option value="volvo">Front End</option>
-            <option value="saab">Back End</option>
-            <option value="audi">Mobile</option>
-            </select>   
-        </div>
-        )
+function SelectCategory({ category, storeValue, fieldName }) {
+  return (
+    <div className="listTeamsContainer">
+      <p>Selecione seu time</p>
+      <select
+        name={fieldName}
+        onChange={storeValue}
+        value={category}
+        id="categories"
+        className={styles.selectTeams}
+        required
+      >
+        <option value="frontend">Front End</option>
+        <option value="backend">Back End</option>
+        <option value="mobile">Mobile</option>
+      </select>
+    </div>
+  );
 }
-export default SelectCategory
+
+export default SelectCategory;

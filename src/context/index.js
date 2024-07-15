@@ -4,8 +4,14 @@ export const VideosContext = createContext()
 
 function VideosProvider ({children}){
    const [videos, setVideos] = useState([])
+    const [actualVideo, setActualVideo] = useState(null)
 
-   // videos[0].videos
+    const searchNewVideo = async (id) => {
+        const videoFound = await fetch(`https://669179aa26c2a69f6e8fdad7.mockapi.io/videos/${id}`);
+        const video = await videoFound.json();
+        setActualVideo(video)
+    }
+    
     const filterVideos = (videos)=>{
         if(videos){
             return[
@@ -21,12 +27,30 @@ function VideosProvider ({children}){
     const videos = filterVideos(data)
     setVideos(videos) 
 }
+const deleteVideo = async (id) => {
+    try {
+      await fetch(`https://669179aa26c2a69f6e8fdad7.mockapi.io/videos/${id}`, { method: "DELETE" });
+      setVideos((prevVideos) => {
+        const updatedVideos = prevVideos.map((category) => ({
+          ...category,
+          videos: category.videos.filter((video) => video.id !== id),
+        }));
+        return updatedVideos.filter((category) => category.videos.length > 0);
+      });
+    } catch (error) {
+      console.error("Erro ao deletar vídeo:", error);
+    }
+  };
     useEffect(()=>{
         findVideos()
     },[])
 
     const shared={
-        videos
+        videos,
+        searchNewVideo,
+        actualVideo,
+        deleteVideo,
+        findVideos
     } 
 
     return(
