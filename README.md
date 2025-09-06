@@ -1,70 +1,173 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 📖 Blog React
 
-## Available Scripts
+O projeto consiste em um blog desenvolvido em **React**, permitindo a navegação entre páginas, visualização de posts dinâmicos, renderização de conteúdo em **Markdown** e tratamento de rotas não encontradas.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Tecnologias Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* **React (Create React App)** ⚛️
+* **React Router** 🛣️
+* **React Markdown** ✍️
+* **JavaScript (ES6+)** 🟡
+* **CSS Modules** 🎨
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 📂 Estrutura do Projeto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<details>
+  <summary>Clique para ver</summary>
+  
+  ```bash
+├── .gitignore
+├── README.md
+├── jsconfig.json
+├── package-lock.json
+├── package.json
+├── public
+    ├── assets
+    │   └── posts
+    │   │   ├── 1
+    │   │       ├── capa.png
+    │   │       ├── gif-1.gif
+    │   │       └── gif-2.gif
+    │   │   ├── 2
+    │   │       └── capa.png
+    │   │   ├── 3
+    │   │       └── capa.png
+    │   │   ├── 4
+    │   │       └── capa.png
+    │   │   ├── 5
+    │   │       └── capa.png
+    │   │   ├── 6
+    │   │       └── capa.png
+    │   │   ├── 7
+    │   │       └── capa.png
+    │   │   └── 8
+    │   │       └── capa.png
+    ├── favicon.ico
+    ├── index.html
+    ├── logo192.png
+    ├── logo512.png
+    ├── manifest.json
+    └── robots.txt
+├── src
+    ├── assets
+    │   ├── Gustavo José Soares Santana.jpg
+    │   ├── circulo_colorido.png
+    │   ├── erro_404.png
+    │   ├── marca_registrada.svg
+    │   ├── minha_foto.png
+    │   ├── minha_fotoss.png
+    │   ├── posts
+    │   │   ├── 1
+    │   │   │   ├── capa.png
+    │   │   │   ├── gif-1.gif
+    │   │   │   └── gif-2.gif
+    │   │   ├── 2
+    │   │   │   └── capa.png
+    │   │   ├── 3
+    │   │   │   └── capa.png
+    │   │   ├── 4
+    │   │   │   └── capa.png
+    │   │   ├── 5
+    │   │   │   └── capa.png
+    │   │   ├── 6
+    │   │   │   └── capa.png
+    │   │   ├── 7
+    │   │   │   └── capa.png
+    │   │   └── 8
+    │   │   │   └── capa.png
+    │   ├── sobre_mim_capa.png
+    │   └── sobre_mim_foto.png
+    ├── componentes
+    │   ├── Banner
+    │   │   ├── Banner.module.css
+    │   │   └── index.js
+    │   ├── BotaoPrincipal
+    │   │   ├── BotaoPrincipal.module.css
+    │   │   └── index.js
+    │   ├── Menu
+    │   │   ├── Menu.module.css
+    │   │   └── index.js
+    │   ├── MenuLink
+    │   │   ├── MenuLink.module.css
+    │   │   └── index.js
+    │   ├── PaginaPadrao
+    │   │   └── index.js
+    │   ├── PostCard
+    │   │   ├── Post.module.css
+    │   │   └── index.js
+    │   ├── PostModelo
+    │   │   ├── PostModelo.module.css
+    │   │   └── index.js
+    │   ├── Rodape
+    │   │   ├── Rodape.module.css
+    │   │   └── index.js
+    │   └── ScrollToTop
+    │   │   └── index.js
+    ├── index.css
+    ├── index.js
+    ├── json
+    │   └── posts.json
+    ├── paginas
+    │   ├── Inicio
+    │   │   ├── Inicio.module.css
+    │   │   └── index.js
+    │   ├── NaoEncontrada
+    │   │   ├── NaoEncontrada.module.css
+    │   │   └── index.js
+    │   ├── Post
+    │   │   ├── Post.css
+    │   │   ├── Post.module.css
+    │   │   └── index.js
+    │   └── SobreMim
+    │   │   ├── SobreMim.module.css
+    │   │   └── index.js
+    └── routes.js
+└── vercel.json
+```
 
-### `npm run build`
+</details>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📌 Funcionalidades
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Navegação entre páginas sem recarregar a aplicação
+* Página inicial com posts e rodapé
+* Página **Sobre Mim** personalizada
+* Visualização de posts individuais com `useParams`
+* Renderização de conteúdo em **Markdown**
+* Página **Não Encontrada (404)** com botão de retorno à Home
+* Seção de posts recomendados + **ScrollToTop** automático
+* Estrutura padronizada com `PaginaPadrao` utilizando `Outlet`
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## ▶️ Como Executar o Projeto
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone este repositório:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   git clone https://github.com/gustavojoze/blog-react.git
+   ```
+2. Instale as dependências:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   npm install
+   ```
+3. Rode o projeto:
 
-## Learn More
+   ```bash
+   npm start
+   ```
+4. Agora abra no navegador em:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   http://localhost:3000
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
